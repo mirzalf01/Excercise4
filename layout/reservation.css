@@ -1,0 +1,158 @@
+*{padding:0px;margin: 0px;}
+.body{
+	background-color: blue;
+	display: grid;
+	grid-template-rows: 4% 92% 4%;
+	grid-template-columns: auto; 
+}
+.nav{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 30% 70%;
+	background-color: #2c3e50;
+}
+.lnav{
+	text-align: right;
+	font-family: KG Broken Vessels Sketch;
+	font-size: 26px; 
+}
+.lnav a[href]{
+	text-decoration: none;
+}
+.lnav span{
+	position: relative;
+	bottom: 10px;
+	color: white;
+	padding: 4px;
+}
+.lnav img{
+	height: 50px;
+	width: auto;
+}
+.menu2{
+	display: none;
+}
+.rnav{
+	font-size: 20px;
+	font-family: Open Sans;
+}
+.rnav ul{
+	list-style-type: none;
+}
+.rnav ul li{
+	float: right;
+	padding: 15px;
+}
+.rnav ul li a[href]{
+	text-decoration: none;
+	color: silver;
+}
+.rnav ul li a[href]:hover, .search:hover{
+	color: white;
+}
+.input{
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	width: 250px;
+	font-family: Open Sans;
+	padding: 0px 5px;
+	font-family: 18px;
+}
+.button{
+	border: none;
+	background-color: #2c3e50;
+	color: silver;
+}
+.fas{
+	font-size: 20px;
+}
+.bodyform{
+	background-color: white;
+}
+.form{
+	text-align: center;
+	display: grid;
+	grid-template-rows: repeat(6,auto); 
+}
+.finput{
+	width: 250px;
+	height: 20px;
+	margin: 10px;
+	padding: 5px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+.submit{
+	width: 21%;
+	height: 30px;
+	margin: 10px;
+	padding: 5px;
+	background-color: #2c3e50;
+	border: none;
+	border-radius: 4px;
+	color: silver;
+}
+.submit:hover{
+	color: white;
+}
+.footer{
+	background-color: #57606f;
+	position: absolute;
+	bottom: 0px;
+	height: 40px;
+	width: 100%;
+}
+.fcenter{
+	text-align: center;
+}
+.ffab{
+	padding: 5px 5%;
+	color: silver;
+	font-size: 22px;
+}
+.ffab:hover{
+	cursor: pointer;
+	color: white;
+}
+
+
+
+
+@media only screen and (max-width: 932px){
+	.menu1{
+		display: none;
+	}
+	.menu2{
+		display: block;
+		float: right;
+		width: 50%;
+		padding: 10px;
+		margin: 10px 0px 0px 0px;
+
+	}
+}
+@media screen and (max-width:932px){
+	.nav{
+		display: grid;
+		grid-template-columns: 60% auto;
+	}
+	.lnav{
+		text-align: left;
+	}
+}
+@media only screen and (max-width: 500px){
+	.nav{
+		display: grid;
+		grid-template-rows: repeat(2,auto); 
+		grid-template-columns: auto;
+	}
+	.lnav{
+		text-align: center;
+	}
+	.menu2{
+		width: 100%;
+		margin: 0px;
+	}
+
+}
